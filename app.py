@@ -1,6 +1,6 @@
 """
 Dashboard interativo para análise do Stricto Sensu em Ciências Naturais
-Autor: [Seu Nome]
+Autor: [Artur Neves de Assis - arturassis@unisinos.br]
 Data: Março 2025
 Descrição: Visualização de dados de matrículas em programas de pós-graduação
 """
