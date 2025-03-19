@@ -9,6 +9,23 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
+# Configuração para melhor incorporação em iFrames
+st.set_page_config(
+    page_title="Panorama do Stricto Sensu",
+    layout="wide",
+    initial_sidebar_state="collapsed"
+)
+
+# CSS para remover elementos indesejados na incorporação
+hide_streamlit_style = """
+    <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    .stDeployButton {display:none;}
+    </style>
+    """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
 # Title
 st.title("Panorama do Stricto Sensu em Ciências Naturais")
 
