@@ -28,7 +28,7 @@ def calcular_cagr(valores, anos):
 # Carregar os dados
 @st.cache_data  # Cache data for better performance
 def carregar_dados():
-    df = pd.read_csv('stricto_sensu_ciencias_naturais.csv', encoding="utf-8", sep=",")
+    df = pd.read_parquet('stricto_sensu_ciencias_naturais.parquet')
     
     # Garantir que a coluna Ano seja numérica
     df['Ano'] = pd.to_numeric(df['Ano'], errors='coerce')
